@@ -3,6 +3,7 @@
 namespace Pmochine\LaravelNovaHashids\Http;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Vinkla\Hashids\Facades\Hashids;
 
 class HashidsConverterController
