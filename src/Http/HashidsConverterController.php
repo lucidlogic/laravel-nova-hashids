@@ -45,7 +45,12 @@ class HashidsConverterController
 			'selected' => 'required'
 		]);
 
-		if(! array_has($this->config, 'connections.'.$request->selected)){
+		if(
+		    !Arr::has(
+		        $this->config,
+                	'connections.'.$request->selected
+		    )
+		){
 			return abort(422);
 		}
 
